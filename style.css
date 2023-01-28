@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Indie+Flower&family=Rubik+Bubbles&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body div {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 45%, rgba(148, 187, 233, 1) 66%);
+    width: 100vw;
+    height: 100vh;
+    background-size: 700% 700%;
+    animation: ani 2s ease-in infinite;
+}
+
+div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(170, 13, 13, 0.758);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.734);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0px;
+        font-size: 100px;
+        font-family: 'Bitter', serif;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+    }
+    50% {
+        background-position: 100%;
+        font-size: 200px;
+        font-family: 'Rubik Bubbles', cursive;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+    }
+    100% {
+        background-color: 50%;
+        font-size: 100px;
+        font-family: 'Indie Flower', cursive;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.08);
+    }
+}
